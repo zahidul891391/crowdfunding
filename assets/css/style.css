@@ -36,5 +36,5 @@ header {
     transition: all 0.3s;
 }
 .nav-link:hover {
-    color: white;
+    color: green;
 }
