@@ -4,8 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+    --clore: rgb(202, 198, 198);
+
+}
 body {
-    background-color: aquamarine;
+    background-color: var(--clore);
+    color: var(--Dark-gray);
+}
+h1, h2, h3, h4, h5, h6, {
+    color: var(--Black);
 }
 
 header {
@@ -37,4 +49,65 @@ header {
 }
 .nav-link:hover {
     color: green;
+}
+
+/* ..............................................
+    HERO SECTION
+................................................. */
+.container {
+    width: 600px;
+    background-color: var(--clore);
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.secendary-logo {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.section-heading {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+    .section-heading h1 {
+        margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.buttons button {
+    border: 0;
+    background-color: var(--Dark-gray);
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 8px 20px;
+    height: 50px;
+    color: white;
+}
+.buttons button:first-child {
+    background-color: var(--Dark-gray);
+}
+.buttons button:last-child{
+    background-color: var(--Dark-gray);
+    color: gray;
+}
+.buttons button img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: -35px;
+
+}
+.buttons .bookmark {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
